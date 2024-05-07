@@ -5,6 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "build": "vite build",
     "preview": "vite preview",
     "test:unit": "vitest",
@@ -25,9 +27,11 @@
     "@vue/test-utils": "^2.4.5",
     "eslint": "^8.57.0",
     "eslint-plugin-vue": "^9.23.0",
+    "gh-pages": "^6.1.1",
     "jsdom": "^24.0.0",
     "prettier": "^3.2.5",
     "vite": "^5.2.8",
+    "vite-plugin-gh-pages": "^0.4.1",
     "vite-plugin-vue-devtools": "^7.0.25",
     "vitest": "^1.4.0"
   }
